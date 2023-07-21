@@ -33,8 +33,8 @@ arcos = set(distances.keys())
 model = ConcreteModel(name="AssignmentPriority")
 
 # Sets
-model.POSITIONS = Set(ordered = False, initialize=positions)                      #Conjunto de Buques
-model.RUNS = Set(ordered = False, initialize=positions)                          #Conjunto de Corridas
+model.POSITIONS = Set(ordered = False, initialize=positions)                     
+model.RUNS = Set(ordered = False, initialize=positions)                          
 model.FACTORS = Set(ordered = False, initialize=factors)   
 model.ARCOS = Set(ordered = False, initialize=arcos)
 
