@@ -3,7 +3,7 @@ from pyomo.environ import *
 from pyomo.opt import *
 
 # Set the solver
-solver = solvers.SolverFactory('gurobi')
+solver = solvers.SolverFactory('gurobi')  #A license is required for the use of the Gurobi optimizer
 
 vec=[-1,1]     #first factor levels
 vec2=[-1,0,1]  #Second factor levels
